@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> <!-- Responsive design, para diferentes dispositivos -->
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body >
+
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/Logo.svg" alt="Logo Alura"></h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="area-encriptar">
+                    <div>
+                        <textarea id="ingresar-texto" rows="10" cols="10" class="ingresar-texto" placeholder="Ingrese texto Aquí"></textarea>
+                    </div>
+                    
+                    <div class="notificacion">
+                        <img class="informacion" src="imagenes/Vector.svg" alt="informacion">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+
+                    <ul class="lista-botones">
+                        <li class="botones">
+                            <button id="boton-encriptar" class="boton-encriptar" >Encriptar</button>
+                        </li>
+                        <li class="botones">
+                            <button id="boton-desencriptar" class="boton-desencriptar" >Desencriptar</button>
+                        </li>
+                    </ul>
+            </div>
+            
+            <div class="area-desencriptar">
+                    <div id="imagen">
+                        <img clas="imagen" src="imagenes/Muñeco.svg" alt="Muñeco">
+                        <img class="imagen" src="imagenes/no_texto.svg" alt="no-texto">
+                    </div>
+                    <div>
+                        <textarea id="copiar-texto" rows="8" cols="10" class="copiar-texto" disabled></textarea>
+                        <div>
+                            <button class="boton-copiar" id="boton-copiar">Copiar</button>
+                        </div>
+                    </div>
+            </div>    
+        </main>
+
+        <footer>
+            <p class="copyright">&copy; Copyright Encriptador JAVI - 2022</p>
+        </footer>
+        
+    </body>
+    <script src="myscript.js"></script>
+
+</html>
